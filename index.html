@@ -1,79 +1,232 @@
 <!DOCTYPE html>
 <html>
-
   <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Bootstrap HAja : Sleek, intuitive, and powerful front-end framework for faster and easier web development." />
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Bootstrap HAja</title>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>Bootstrap HAja by hajamca</title>
   </head>
 
   <body>
+    <div id="container">
+      <div class="inner">
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/hajamca/bootstrap">View on GitHub</a>
-
-          <h1 id="project_title">Bootstrap HAja</h1>
-          <h2 id="project_tagline">Sleek, intuitive, and powerful front-end framework for faster and easier web development.</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/hajamca/bootstrap/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/hajamca/bootstrap/tarball/master">Download this project as a tar.gz file</a>
-            </section>
+        <header>
+          <h1>Bootstrap HAja</h1>
+          <h2>Sleek, intuitive, and powerful front-end framework for faster and easier web development.</h2>
         </header>
-    </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/hajamca/bootstrap/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/hajamca/bootstrap/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/hajamca/bootstrap" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+        <hr>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
+        <section id="main_content">
+          <h1>
+<a name="bootstrap--" class="anchor" href="#bootstrap--"><span class="octicon octicon-link"></span></a><a href="http://getbootstrap.com">Bootstrap</a> <a href="http://travis-ci.org/twbs/bootstrap"><img src="https://secure.travis-ci.org/twbs/bootstrap.png" alt="Build Status"></a> <a href="https://david-dm.org/twbs/bootstrap#info=devDependencies"><img src="https://david-dm.org/twbs/bootstrap/dev-status.png" alt="devDependency Status"></a>
+</h1>
+
+<p><a href="https://saucelabs.com/u/bootstrap"><img src="https://saucelabs.com/browser-matrix/bootstrap.svg" alt="Selenium Test Status"></a></p>
+
+<p>Bootstrap is a sleek, intuitive, and powerful front-end framework for faster and easier web development, created by <a href="http://twitter.com/mdo">Mark Otto</a> and <a href="http://twitter.com/fat">Jacob Thornton</a>, and maintained by the <a href="https://github.com/twbs?tab=members">core team</a> with the massive support and involvement of the community.</p>
+
+<p>To get started, check out <a href="http://getbootstrap.com">http://getbootstrap.com</a>!</p>
+
+<h2>
+<a name="quick-start" class="anchor" href="#quick-start"><span class="octicon octicon-link"></span></a>Quick start</h2>
+
+<p>Three quick start options are available:</p>
+
+<ul>
+<li>
+<a href="https://github.com/twbs/bootstrap/archive/v3.1.0.zip">Download the latest release</a>.</li>
+<li>Clone the repo: <code>git clone https://github.com/twbs/bootstrap.git</code>.</li>
+<li>Install with <a href="http://bower.io">Bower</a>: <code>bower install bootstrap</code>.</li>
+</ul><p>Read the <a href="http://getbootstrap.com/getting-started/">Getting Started page</a> for information on the framework contents, templates and examples, and more.</p>
+
+<h3>
+<a name="whats-included" class="anchor" href="#whats-included"><span class="octicon octicon-link"></span></a>What's included</h3>
+
+<p>Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You'll see something like this:</p>
+
+<pre><code>bootstrap/
+├── css/
+│   ├── bootstrap.css
+│   ├── bootstrap.min.css
+│   ├── bootstrap-theme.css
+│   └── bootstrap-theme.min.css
+├── js/
+│   ├── bootstrap.js
+│   └── bootstrap.min.js
+└── fonts/
+    ├── glyphicons-halflings-regular.eot
+    ├── glyphicons-halflings-regular.svg
+    ├── glyphicons-halflings-regular.ttf
+    └── glyphicons-halflings-regular.woff
 </code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<p>We provide compiled CSS and JS (<code>bootstrap.*</code>), as well as compiled and minified CSS and JS (<code>bootstrap.min.*</code>). Fonts from Glyphicons are included, as is the optional Bootstrap theme.</p>
+
+<h2>
+<a name="bugs-and-feature-requests" class="anchor" href="#bugs-and-feature-requests"><span class="octicon octicon-link"></span></a>Bugs and feature requests</h2>
+
+<p>Have a bug or a feature request? <a href="https://github.com/twbs/bootstrap/issues">Please open a new issue</a>. Before opening any issue, please search for existing issues and read the <a href="https://github.com/necolas/issue-guidelines">Issue Guidelines</a>, written by <a href="https://github.com/necolas/">Nicolas Gallagher</a>.</p>
+
+<p>You may use <a href="http://jsbin.com/aKiCIDO/1/edit">this JS Bin</a> as a template for your bug reports.</p>
+
+<h2>
+<a name="documentation" class="anchor" href="#documentation"><span class="octicon octicon-link"></span></a>Documentation</h2>
+
+<p>Bootstrap's documentation, included in this repo in the root directory, is built with <a href="http://jekyllrb.com">Jekyll</a> and publicly hosted on GitHub Pages at <a href="http://getbootstrap.com">http://getbootstrap.com</a>. The docs may also be run locally.</p>
 
 <h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<a name="running-documentation-locally" class="anchor" href="#running-documentation-locally"><span class="octicon octicon-link"></span></a>Running documentation locally</h3>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<ol>
+<li>If necessary, <a href="http://jekyllrb.com/docs/installation">install Jekyll</a> (requires v1.x).
+
+<ul>
+<li>
+<strong>Windows users:</strong> read <a href="https://github.com/juthilo/run-jekyll-on-windows/">this unofficial guide</a> to get Jekyll up and running without problems.</li>
+</ul>
+</li>
+<li>From the root <code>/bootstrap</code> directory, run <code>jekyll serve</code> in the command line.
+
+<ul>
+<li>
+<strong>Windows users:</strong> For Ruby 2.0.0 run <code>chcp 65001</code> first to change the command prompt's character encoding (<a href="http://en.wikipedia.org/wiki/Windows_code_page">code page</a>) to UTF-8 so Jekyll runs without errors. For Ruby 1.9.3 you can alternatively do <code>SET LANG=en_EN.UTF-8</code>. In addition, ensure you have Python installed and added in your <code>PATH</code> or the build will fail due to our Pygments dependency.</li>
+</ul>
+</li>
+<li>Open <a href="http://localhost:9001">http://localhost:9001</a> in your browser, and voilà.</li>
+</ol><p>Learn more about using Jekyll by reading its <a href="http://jekyllrb.com/docs/home/">documentation</a>.</p>
 
 <h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+<a name="documentation-for-previous-releases" class="anchor" href="#documentation-for-previous-releases"><span class="octicon octicon-link"></span></a>Documentation for previous releases</h3>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<p>Documentation for v2.3.2 has been made available for the time being at <a href="http://getbootstrap.com/2.3.2/">http://getbootstrap.com/2.3.2/</a> while folks transition to Bootstrap 3.</p>
+
+<p><a href="https://github.com/twbs/bootstrap/releases">Previous releases</a> and their documentation are also available for download.</p>
+
+<h2>
+<a name="compiling-css-and-javascript" class="anchor" href="#compiling-css-and-javascript"><span class="octicon octicon-link"></span></a>Compiling CSS and JavaScript</h2>
+
+<p>Bootstrap uses <a href="http://gruntjs.com/">Grunt</a> with convenient methods for working with the framework. It's how we compile our code, run tests, and more. To use it, install the required dependencies as directed and then run some Grunt commands.</p>
 
 <h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<a name="install-grunt" class="anchor" href="#install-grunt"><span class="octicon octicon-link"></span></a>Install Grunt</h3>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<p>From the command line:</p>
+
+<ol>
+<li>Install <code>grunt-cli</code> globally with <code>npm install -g grunt-cli</code>.</li>
+<li>Navigate to the root <code>/bootstrap</code> directory, then run <code>npm install</code>. npm will look at <a href="package.json">package.json</a> and automatically install the necessary local dependencies listed there.</li>
+</ol><p>When completed, you'll be able to run the various Grunt commands provided from the command line.</p>
+
+<p><strong>Unfamiliar with <code>npm</code>? Don't have node installed?</strong> That's a-okay. npm stands for <a href="http://npmjs.org/">node packaged modules</a> and is a way to manage development dependencies through node.js. <a href="http://nodejs.org/download/">Download and install node.js</a> before proceeding.</p>
 
 <h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+<a name="available-grunt-commands" class="anchor" href="#available-grunt-commands"><span class="octicon octicon-link"></span></a>Available Grunt commands</h3>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
+<h4>
+<a name="build---grunt" class="anchor" href="#build---grunt"><span class="octicon octicon-link"></span></a>Build - <code>grunt</code>
+</h4>
+
+<p>Run <code>grunt</code> to run tests locally and compile the CSS and JavaScript into <code>/dist</code>. <strong>Uses <a href="http://twitter.github.io/recess/">recess</a> and <a href="http://lisperator.net/uglifyjs/">UglifyJS</a>.</strong></p>
+
+<h4>
+<a name="only-compile-css-and-javascript---grunt-dist" class="anchor" href="#only-compile-css-and-javascript---grunt-dist"><span class="octicon octicon-link"></span></a>Only compile CSS and JavaScript - <code>grunt dist</code>
+</h4>
+
+<p><code>grunt dist</code> creates the <code>/dist</code> directory with compiled files. <strong>Uses <a href="http://twitter.github.io/recess/">recess</a> and <a href="http://lisperator.net/uglifyjs/">UglifyJS</a>.</strong></p>
+
+<h4>
+<a name="tests---grunt-test" class="anchor" href="#tests---grunt-test"><span class="octicon octicon-link"></span></a>Tests - <code>grunt test</code>
+</h4>
+
+<p>Runs <a href="http://jshint.com">JSHint</a> and <a href="http://qunitjs.com/">QUnit</a> tests headlessly in <a href="http://phantomjs.org/">PhantomJS</a> (used for CI).</p>
+
+<h4>
+<a name="watch---grunt-watch" class="anchor" href="#watch---grunt-watch"><span class="octicon octicon-link"></span></a>Watch - <code>grunt watch</code>
+</h4>
+
+<p>This is a convenience method for watching just Less files and automatically building them whenever you save.</p>
+
+<h3>
+<a name="troubleshooting-dependencies" class="anchor" href="#troubleshooting-dependencies"><span class="octicon octicon-link"></span></a>Troubleshooting dependencies</h3>
+
+<p>Should you encounter problems with installing dependencies or running Grunt commands, uninstall all previous dependency versions (global and local). Then, rerun <code>npm install</code>.</p>
+
+<h2>
+<a name="contributing" class="anchor" href="#contributing"><span class="octicon octicon-link"></span></a>Contributing</h2>
+
+<p>Please read through our <a href="https://github.com/twbs/bootstrap/blob/master/CONTRIBUTING.md">contributing guidelines</a>. Included are directions for opening issues, coding standards, and notes on development.</p>
+
+<p>More over, if your pull request contains JavaScript patches or features, you must include relevant unit tests. All HTML and CSS should conform to the <a href="http://github.com/mdo/code-guide">Code Guide</a>, maintained by <a href="http://github.com/mdo">Mark Otto</a>.</p>
+
+<p>Editor preferences are available in the <a href=".editorconfig">editor config</a> for easy use in common text editors. Read more and download plugins at <a href="http://editorconfig.org">http://editorconfig.org</a>.</p>
+
+<h2>
+<a name="community" class="anchor" href="#community"><span class="octicon octicon-link"></span></a>Community</h2>
+
+<p>Keep track of development and community news.</p>
+
+<ul>
+<li>Follow <a href="http://twitter.com/twbootstrap">@twbootstrap on Twitter</a>.</li>
+<li>Read and subscribe to <a href="http://blog.getbootstrap.com">The Official Bootstrap Blog</a>.</li>
+<li>Chat with fellow Bootstrappers in IRC. On the <code>irc.freenode.net</code> server, in the <code>##twitter-bootstrap</code> channel.</li>
+</ul><h2>
+<a name="versioning" class="anchor" href="#versioning"><span class="octicon octicon-link"></span></a>Versioning</h2>
+
+<p>For transparency into our release cycle and in striving to maintain backward compatibility, Bootstrap is maintained under the Semantic Versioning guidelines. Sometimes we screw up, but we'll adhere to these rules whenever possible.</p>
+
+<p>Releases will be numbered with the following format:</p>
+
+<p><code>&lt;major&gt;.&lt;minor&gt;.&lt;patch&gt;</code></p>
+
+<p>And constructed with the following guidelines:</p>
+
+<ul>
+<li>Breaking backward compatibility <strong>bumps the major</strong> while resetting minor and patch</li>
+<li>New additions without breaking backward compatibility <strong>bumps the minor</strong> while resetting the patch</li>
+<li>Bug fixes and misc changes <strong>bumps only the patch</strong>
+</li>
+</ul><p>For more information on SemVer, please visit <a href="http://semver.org/">http://semver.org/</a>.</p>
+
+<h2>
+<a name="authors" class="anchor" href="#authors"><span class="octicon octicon-link"></span></a>Authors</h2>
+
+<p><strong>Mark Otto</strong></p>
+
+<ul>
+<li><a href="http://twitter.com/mdo">http://twitter.com/mdo</a></li>
+<li><a href="http://github.com/mdo">http://github.com/mdo</a></li>
+</ul><p><strong>Jacob Thornton</strong></p>
+
+<ul>
+<li><a href="http://twitter.com/fat">http://twitter.com/fat</a></li>
+<li><a href="http://github.com/fat">http://github.com/fat</a></li>
+</ul><h2>
+<a name="copyright-and-license" class="anchor" href="#copyright-and-license"><span class="octicon octicon-link"></span></a>Copyright and license</h2>
+
+<p>Copyright 2013 Twitter, Inc under <a href="LICENSE">the MIT license</a>.</p>
+        </section>
+
+        <footer>
+          Bootstrap HAja is maintained by <a href="https://github.com/hajamca">hajamca</a><br>
+          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+        
+      </div>
     </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Bootstrap HAja maintained by <a href="https://github.com/hajamca">hajamca</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
   </body>
 </html>
